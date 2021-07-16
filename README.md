@@ -1,6 +1,7 @@
 Work Day Scheduler
 
 URL: https://github.com/mingmanhk/Work-Day-Scheduler
+Page: https://mingmanhk.github.io/Work-Day-Scheduler
 
 # 05 Third-Party APIs: Work Day Scheduler
 
