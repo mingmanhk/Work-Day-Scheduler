@@ -38,6 +38,7 @@ var changetaskcolorbyhour = function () {
 var addTask = function(taskdetail, taskrow) {
     var taskEl = taskrow.find(".taskDetail");
     var taskP = $("<p>").addClass("description").text(taskdetail)
+    taskEl.empty();
     taskEl.html(taskP);
 }
 
@@ -77,9 +78,7 @@ var savetaskdetail = function (taskdetailEl) {
 //Add event when click task detail
 $(".taskDetail").click(function() {
     // reset all the taskdetail to readonly
-    $("textarea").each(function() {
-        savetaskdetail($(this));
-    })
+   showTask()
     // only future and present may change task detail
     var taskstatus = $(this).closest(".taskDetail").attr('class');
     if (taskstatus.includes("future") ||taskstatus.includes("present"))
