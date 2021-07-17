@@ -53,6 +53,7 @@ var showTask = function() {
     changetaskcolorbyhour()
 }
 
+//refresh the target row task detail
 var refreshrowtaskdetail = function (taskdetailEl) {
     // Save the task to localstroage
     var taskrow = taskdetailEl.closest(".row");
