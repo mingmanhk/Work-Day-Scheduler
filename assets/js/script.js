@@ -76,9 +76,10 @@ var savetaskdetail = function (taskdetailEl) {
 }
 
 //Add event when click task detail
-$(".taskDetail").click(function() {
+$(".taskDetail").click(function () {
     // reset all the taskdetail to readonly
-   showTask()
+    showTask()
+    savetaskdetail($(this))
     // only future and present may change task detail
     var taskstatus = $(this).closest(".taskDetail").attr('class');
     if (taskstatus.includes("future") ||taskstatus.includes("present"))
